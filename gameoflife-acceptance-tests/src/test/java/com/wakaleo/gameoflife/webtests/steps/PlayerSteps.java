@@ -14,7 +14,7 @@ public class PlayerSteps {
     private Pages pages;
 
     @Step
-    public void opens_home_page() 
+    public void opens_home_page(); 
         onHomePage().open();
     }
 
