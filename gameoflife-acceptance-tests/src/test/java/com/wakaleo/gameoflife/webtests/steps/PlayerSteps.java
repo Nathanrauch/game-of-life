@@ -14,13 +14,14 @@ public class PlayerSteps {
     private Pages pages;
 
     @Step
-    public void opens_home_page() {
+    public void opens_home_page() 
         onHomePage().open();
     }
 
     @Step
     public void should_see_title_of(String expectedTitle) {
-        assertThat(currentPage().getTitle()).contains(expectedTitle);
+        assertThat(currentPage().g
+        etTitle()).contains(expectedTitle);
     }
 
     @Step
